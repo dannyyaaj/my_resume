@@ -7,8 +7,8 @@ body {
 #portrait {
   margin: auto;
   display: block;
-  width: 15rem;
-  height: 15rem;
+  max-width: 35%;
+  max-height: 25%;
 }
 
 #container {
