@@ -1,19 +1,15 @@
 
 body {
   font-family: Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: .75rem;
 }
 
 #portrait {
   margin: auto;
   display: block;
-  max-width: 35%;
-  max-height: 25%;
-}
-
-#container {
-  width: 900px;
-  margin: auto;
+  max-width: 7rem;
+  background-size: cover;
+  object-fit: cover;
 }
 
 #intro {
@@ -23,40 +19,37 @@ body {
 h1 {
   text-align: center;
   font-weight: bold;
-  font-size: 40px;
 }
 
 h2 {
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-
-h3 {
-  font-size: 20px;
+  margin-bottom: 1em;
 }
 
 hr {
-  height: 2px;
+  height: .075rem;
   background: lightsteelblue;
-  border-radius: 5px;
+  border-radius: .25rem;
+}
+
+li {
+  line-height: 1.25;
 }
 
 #contact {
-  display: block;
-}
-
-.address {
-  float: left;
-  margin: auto;
+  display: grid;
+  grid-gap: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  text-align: center;
 }
 
 .phone-email {
-  float: right;
-  margin: auto;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #header-professional {
-  margin-top: 100px;
+  margin-top: 2em;
   display: block;
 }
 
@@ -64,3 +57,34 @@ hr {
   float: right;
   margin: auto;
 }
+
+@media (min-width: 40em) {
+  #container {
+  width: 90%;
+  margin: auto;
+  max-width: 600px;
+  }
+}
+
+@media (min-width: 55em) {
+  body {
+  font-size: 1rem;
+}
+  #container {
+  max-width: 850px;
+  }
+}
+
+@media (min-width: 75em) {
+  #container {
+  max-width: 1000px;
+  }
+}
+
+
+@media (min-width: 90em) {
+  #container {
+  max-width: 1200px;
+  }
+}
+
